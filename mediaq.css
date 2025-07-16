@@ -1,0 +1,88 @@
+/* 1020px and below */
+@media (max-width: 1020px) {
+  .search-bar {
+    max-width: 300px;
+  }
+
+  aside {
+    width: 160px;
+  }
+
+  .videos {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+}
+
+/* 768px and below - tablet view */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  aside {
+    display: none; /* Hide sidebar */
+  }
+  /* Optionally, show a menu button */
+  .menu-btn {
+    display: block;
+  }
+
+  .videos {
+    padding: 10px;
+  }
+}
+
+/* 480px and below - mobile view */
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .videos {
+    grid-template-columns: 1fr;
+  }
+
+  .video-info h3 {
+    font-size: 14px;
+  }
+
+  .video-info p {
+    font-size: 12px;
+  }
+
+  aside {
+    display: none; /* Hide sidebar */
+  }
+  .menu-btn {
+    display: block;
+  }
+}
+
+/* 320px - very small screens */
+@media (max-width: 320px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  .search-bar input {
+    font-size: 12px;
+  }
+
+  .search-bar button {
+    font-size: 14px;
+  }
+
+  .profile {
+    font-size: 18px;
+  }
+
+  aside li {
+    font-size: 14px;
+  }
+}
